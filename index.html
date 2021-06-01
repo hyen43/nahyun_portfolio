@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nahyun</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.0/chart.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/816d2e1d88.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!--header-->
+  <nav class="nav">
+    <ul class="navbar">
+      <li class="nav_li"><a href="#home">HOME</a></li>
+      <li class="nav_li"><a href="#profile">LIKED</a></li>
+      <li class="nav_li"><a href="#roadmap">ROADMAP</a></li>
+    </ul>
+  </nav>
+  <!--information-->
+  <div class="info">
+    <!--home-->
+    <section id="home">
+      <h1 class="title">Hello, I'm NaHyun!</h1>
+      <img class="home_img" src="img/home_profile.jpg">
+      <h5 class="remark">"코딩이라는 바다를 항해 중"</h5>
+    </section>
+    <!--profile-->
+    <section id="profile">
+      <h1 class="profile_title">LIKED</h1>
+      <div class="profile0">
+        <div class="profile1">
+          <div class="profile1_re">
+            <h2 class="discription"> 저는 운동을 좋아합니다. </h2>
+            <span> 웨이트를 좋아하고, 몸을 움직이는 것을 좋아합니다. 열심히 기른 체력으로 열심히 코딩하겠습니다. 나중에 운동방법이 궁금하면 물어봐주세요! 어깨, 등, 이두, 삼두, 하체, 가슴 분할
+              운동 알려드릴게요:)</span>
+          </div>
+          <img src="img/portfolio_운동.jpg">
+        </div>
+        <div class="profile2">
+          <div class="profile2_re">
+            <h2 class="discription"> 저는 커피를 좋아합니다.</h2>
+            <span> 하루에 커피 3잔 기본 아닌가요? 혈액 속에 커피가 흐르는 중입니다. 저랑 커피 마시자고 많이 해주세요! 위코드에 커피머신 있던데.. 머리 회전이 멈출 때는 같이 커피 한잔 하러
+              가용:) </span>
+          </div>
+          <img src="img/portfolio_커피.jpg">
+        </div>
+      </div>
+      <h5 class="profile_remark"> "언젠간 LIKED 안에 코딩이 당당하게 자리잡겠죠?"</h5>
+    </section>
+    <!--roadmap-->
+    <section id="roadmap">
+      <h1 class="title">Career Roadmap</h1>
+      <h3 class="roadmap_discription"> 코딩으로 이루고 싶은 것들 입니다.</h3>
+      <div class="roadmap1">
+        <div class="row">
+          <div class="col-md-6">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <script>
+        let myChart = document.getElementById('myChart').getContext('2d');
+
+        let barChart = new Chart(myChart, {
+          type: 'line',
+          data: {
+            labels: ['위코드', '주니어', '시니어', '테크리더', 'CTO', 'CEO'],
+            datasets: [{
+              label: 'Career roadmap',
+              data: [
+                28,
+                29,
+                33,
+                35,
+                40,
+                45
+              ]
+            }]
+          }
+
+        })
+      </script>
+    </section>
+
+    <footer>
+      <ul class="footer">
+        <li><a href="https://www.instagram.com/hyonii_xx/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://github.com/hyen43" target="_blank"><i class="fab fa-github-square"></i></a></li>
+        <li><a href="https://velog.io/@lnhyen43" target="_blank"><i class="fab fa-blogger-b"></i></a></li>
+        <li><a href="mailto:lnhyen43@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
+      </ul>
+      <span class="footer_remark">Have a nice day!</span>
+      <p calss="copyright">Copyright 2021. 이나현 all right reserved. </p>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -204,7 +204,6 @@ footer p{
 @media screen and (max-width: 580px){
   .container{
     flex-direction: column;
-
   }
   .profile1{
     flex-direction: column;
